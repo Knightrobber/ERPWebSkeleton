@@ -1,0 +1,41 @@
+<html>
+    <head>Attendance checker</head>
+    <body>
+        <div id="main" style = "display: none;" >
+            <div style="display: inline;">
+        <input type="text" placeholder="course name" id="courseName"/>
+        <button onclick="check()">check</button>
+            </div>
+    <div style="display: block;">   
+        <br>Missable Claases<br>
+        <div style="display: inline;">
+        <input type="text" id="missableLectures"/>    
+        <button onclick="TradeForLecture()">Trade for lecture</button>
+        <br>
+        </div>
+        <div style="display: inline;">
+        <input type="text" id="missableLabs"/>     
+        <button onclick="TradeForLab()">Trade for lab</button>
+        <br>
+        </div>
+        <div style="display: inline;">
+        <input type="text" id="missableTutes"/>  
+        <button onclick="TradeForTute()">Trade for tute</button>
+        <br>
+        </div>
+        <div style="display: block;">
+            <label for="currentAttendance">Current Attendance</label>
+            <input type="text" id="currentAttendance"/>
+            <br>
+            <label for="endOfCourseAttendance">End OF course Attendance</label>
+            <input type="text" id="endOfCourseAttendance"/>
+        </div>
+    </div>
+    </div>
+        <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+        <script src="app.js"></script>
+        <script src=https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+        <script src="AttendanceChecker.js"></script>
+    </body>
+</html>
